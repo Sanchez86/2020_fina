@@ -1,0 +1,144 @@
+:root {
+  --default-font: "roboto-example", sans-serif;
+  --accent: orange;
+  --text: #333;
+  --black: #000;
+  --white: #fff;
+  --gray: #333;
+  /* Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss" */
+  --grid-gutter-width: 30px;
+  --grid-columns: 12;
+  --grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+  --container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+  --gutter: 30px;
+  --font-regular: "roboto-example", sans-serif;
+}
+/*========== Desktop First ==========*/
+@media (max-width: 1600px) {
+  header {
+    padding-right: 0;
+  }
+  header nav .links a {
+    margin-left: 1vw;
+  }
+  .last-posts {
+    display: none;
+  }
+}
+@media (max-width: 1500px) {
+  .search,
+  .contrast {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1400px) {
+  header {
+    padding-right: 0;
+  }
+}
+@media (max-width: 1300px) {
+  header nav .links li a {
+    margin-left: 1vw;
+  }
+  header nav .links {
+    margin-right: 2vw;
+  }
+}
+@media (max-width: 1199.98px) {
+  /*search*/
+  /*end search*/
+  .links {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  .links li {
+    padding: 5px 0;
+  }
+  .links li a {
+    margin: 0 !important;
+  }
+  .icons {
+    justify-content: space-between;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .search.mobile {
+    display: block;
+  }
+  .mobile.soc-icons-wrap {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+  .mobile.soc-icons-wrap li {
+    display: inline-block;
+  }
+  li.desktop {
+    display: none;
+  }
+  header nav .links {
+    margin-right: 0;
+  }
+  .search-block.active {
+    position: fixed;
+    top: 100px;
+    bottom: auto;
+    z-index: 1;
+    padding: 10px 30px 0 30px;
+  }
+  .search-block.active .dell span {
+    display: none;
+  }
+  .search-block .dell {
+    min-width: auto;
+  }
+  .search-block .search-input {
+    background-image: none;
+    border: 0;
+  }
+  .search-block .dell-product {
+    margin-top: 8px;
+  }
+  .icons {
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-left: 0;
+    padding: 13px 10px;
+  }
+  .icons a {
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  .header-other-pages__image,
+  .slider,
+  header {
+    padding: 0;
+  }
+  .logo-wrap {
+    left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1660px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    padding: 0;
+  }
+  .links li {
+    padding: 10px 0;
+  }
+  .for-logo.padding {
+    padding: 0;
+  }
+  header nav .links {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
